@@ -1,7 +1,7 @@
 # Actividades
 # 1) Crea un programa que imprima en pantalla todos los números enteros desde 0 hasta 100
 # (incluyendo ambos extremos), en orden creciente, mostrando un número por línea.
-'''
+
 for i in range(0,101):
     print(i)
 
@@ -74,7 +74,7 @@ print(f'Has acertado! Te tomo un total de {total2} intento/s')
 
 for i in range(100, -1, -2):
     print(i)
-'''
+
 # 7) Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un
 # número entero positivo indicado por el usuario.
 
@@ -89,14 +89,45 @@ print(sum)
 # negativos y cuántos son positivos. (Nota: para probar el programa puedes usar una cantidad
 # menor, pero debe estar preparado para procesar 100 números con un solo cambio).
 
+limit = 4
+pares = 0
+impares = 0
+negativos = 0
+positivos = 0
+
+for i in range(limit):
+    num = int(input(f'Por favor ingrese un numero entero numero {i+1} de {limit}: '))
+    if num % 2 == 0:
+        pares += 1
+    else:
+        impares += 1
+    if num > 0:
+        positivos += 1
+    else: 
+        negativos += 1
+
+print(f'Del total de {limit} numeros ingresados {pares} son pares, {impares} son impares, {positivos} son positivos y {negativos} son negativos')
 
 
 # 9) Elabora un programa que permita al usuario ingresar 100 números enteros y luego calcule la
 # media de esos valores. (Nota: puedes probar el programa con una cantidad menor, pero debe
 # poder procesar 100 números cambiando solo un valor).
 
+limit = 4
+total3 = 0
+media = 0
 
+for i in range(limit):
+    num = int(input(f'Por favor ingrese el numero entero numero {i+1} de {limit}: '))
+    total3 += num
+media = float(total3/limit)    
+print(f'Usted ha ingresado {limit} numeros. La media calculada para ellos es de {media}')
 
 
 # 10) Escribe un programa que invierta el orden de los dígitos de un número ingresado por el
 # usuario. Ejemplo: si el usuario ingresa 547, el programa debe mostrar 745.
+
+res = ''
+num = input('Por favor ingrese un numero entero: ')
+for caracter in reversed(num): res += caracter
+print(res) 
