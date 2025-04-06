@@ -1,7 +1,7 @@
 # Actividades
 # 1) Crea un programa que imprima en pantalla todos los números enteros desde 0 hasta 100
 # (incluyendo ambos extremos), en orden creciente, mostrando un número por línea.
-
+'''
 for i in range(0,101):
     print(i)
 
@@ -50,22 +50,39 @@ else:
 # secuencia. El programa debe detenerse y mostrar el total acumulado cuando el usuario ingrese
 # un 0.
 
-
+total = 0
+num = int(input('Por favor ingrese un numero entero: '))
+while num != 0:
+    total += num
+    num = int(input('Por favor ingrese un numero entero: '))
+print(total)
 
 # 5) Crea un juego en el que el usuario deba adivinar un número aleatorio entre 0 y 9. Al final, el
 # programa debe mostrar cuántos intentos fueron necesarios para acertar el número.
 
-
+import random
+aleatorio = random.randint(0,9)
+num = int(input('Por favor adivine el numero entre 0 y 9: '))
+total2 = 1
+while num != aleatorio:
+    total2 += 1
+    num = int(input('No has acertado! Escoge otro numero entre 0 y 9: '))
+print(f'Has acertado! Te tomo un total de {total2} intento/s')
 
 # 6) Desarrolla un programa que imprima en pantalla todos los números pares comprendidos
 # entre 0 y 100, en orden decreciente.
 
-
-
+for i in range(100, -1, -2):
+    print(i)
+'''
 # 7) Crea un programa que calcule la suma de todos los números comprendidos entre 0 y un
 # número entero positivo indicado por el usuario.
 
-
+num = int(input('Por favor ingrese un numero entero positivo: '))
+sum = 0
+for i in range(0, num+1):
+    sum += i
+print(sum)
 
 # 8) Escribe un programa que permita al usuario ingresar 100 números enteros. Luego, el
 # programa debe indicar cuántos de estos números son pares, cuántos son impares, cuántos son
