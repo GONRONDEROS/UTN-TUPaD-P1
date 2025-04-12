@@ -131,3 +131,4 @@ res = ''
 num = input('Por favor ingrese un numero entero: ')
 for caracter in reversed(num): res += caracter
 print(res) 
+
