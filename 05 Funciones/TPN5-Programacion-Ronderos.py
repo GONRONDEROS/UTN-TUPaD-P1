@@ -24,3 +24,23 @@ def saludar_usuario(nombre):
 nombre = input('Por favor ingrese su nombre: ')
 saludar_usuario(nombre)
 
+# 3. Crear una función llamada informacion_personal(nombre, apellido,
+# edad, residencia) que reciba cuatro parámetros e imprima: “Soy [nombre] [apellido], tengo [edad] años y vivo en [residencia]”.
+# Pedir los datos al usuario y llamar a esta función con los valores ingresados.
+
+#Definicion de Funciones
+def informacion_personal(nombre, apellido, edad, residencia):
+    print(f'Soy {nombre} {apellido}, tengo {edad} años y vivo en {residencia}')
+
+#Programa Principal
+nombre = input('Por favor ingrese su nombre: ')
+apellido = input('Por favor ingrese su apellido: ')
+edad = input('Por favor ingrese su edad: ')
+residencia = input('Por favor ingrese su residencia: ')
+informacion_personal(nombre, apellido, edad, residencia)
+
+
+
+
+
+
