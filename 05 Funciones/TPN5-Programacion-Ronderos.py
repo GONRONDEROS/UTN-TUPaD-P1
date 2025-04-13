@@ -70,7 +70,20 @@ def segundos_a_horas(segundos):
 segundos = int(input('Por favor ingrese la cantidad de segundos: '))
 segundos_a_horas(segundos)
 
+# 6. Crear una función llamada tabla_multiplicar(numero) que reciba un
+# número como parámetro y imprima la tabla de multiplicar de ese
+# número del 1 al 10. Pedir al usuario el número y llamar a la función.
 
+#Definicion de Funciones
+def tabla_multiplicar(numero):
+    mult = 0
+    for i in range(1,11):
+        mult = i * numero
+        print(f'2 x {i} = {mult}')
+
+#Programa Principal
+num = int(input('Por favor ingrese un numero: '))
+tabla_multiplicar(num)
 
 
 
