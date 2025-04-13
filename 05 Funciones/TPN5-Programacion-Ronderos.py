@@ -57,6 +57,21 @@ radio = int(input('Por favor ingrese el radio de la circunsferencia: '))
 calcular_area_circulo(radio)
 calcular_perimetro_circulo(radio)
 
+# 5. Crear una función llamada segundos_a_horas(segundos) que reciba
+# una cantidad de segundos como parámetro y devuelva la cantidad
+# de horas correspondientes. Solicitar al usuario los segundos y mostrar el resultado usando esta función.
+
+#Definicion de Funciones
+def segundos_a_horas(segundos):
+    horas = float(segundos/60)/60
+    print(f'{segundos} segundos son un total de {horas} horas')
+
+#Programa Principal
+segundos = int(input('Por favor ingrese la cantidad de segundos: '))
+segundos_a_horas(segundos)
+
+
+
 
 
 
