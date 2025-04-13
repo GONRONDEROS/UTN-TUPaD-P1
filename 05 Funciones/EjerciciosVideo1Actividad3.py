@@ -24,7 +24,6 @@ def sumatoria_divisores_propios(numero):
             aSumar += i
     return aSumar
 
-
 def es_perfecto(numero):
     return sumatoria_divisores_propios(numero) == numero
     
