@@ -85,6 +85,36 @@ def tabla_multiplicar(numero):
 num = int(input('Por favor ingrese un numero: '))
 tabla_multiplicar(num)
 
+# 7. Crear una función llamada operaciones_basicas(a, b) que reciba
+# dos números como parámetros y devuelva una tupla con el resultado de sumarlos, restarlos, multiplicarlos y dividirlos.
+# Mostrar los resultados de forma clara.
+
+#Definicion de Funciones
+def operaciones_basicas(a, b):
+    op_basic = ()
+    if b != 0:
+        op_basic = (suma_basica(a,b), resta_basica(a,b), multiplicacion_basica(a,b), division_basica(a,b))
+        print(op_basic)
+    else:
+        print('El segundo numero no puede ser igual a 0. Por favor ingrese otro numero: ')
+        
+def suma_basica(a,b):
+    return a + b
+    
+def resta_basica(a,b):
+    return a - b
+
+def multiplicacion_basica(a,b):
+    return a * b
+
+def division_basica(a,b):
+    return a/b
+
+#Programa Principal
+a = float(input('Por favor ingrese el primer numero: '))
+b = float(input('Por favor ingrese el segundo numero: '))
+operaciones_basicas(a,b)
+
 
 
 
