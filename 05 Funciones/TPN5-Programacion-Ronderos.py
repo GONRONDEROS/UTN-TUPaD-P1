@@ -39,6 +39,23 @@ edad = input('Por favor ingrese su edad: ')
 residencia = input('Por favor ingrese su residencia: ')
 informacion_personal(nombre, apellido, edad, residencia)
 
+# 4. Crear dos funciones:
+# calcular_area_circulo(radio) que reciba el radio como parámetro y devuelva el área del círculo.
+# calcular_perimetro_circulo(radio) que reciba el radio como parámetro y devuelva el perímetro del círculo.
+# Solicitar el radio al usuario y llamar ambas funciones para mostrar los resultados.
+
+#Definicion de Funciones
+def calcular_area_circulo(radio):
+    area = 3.14 * radio**2
+    print(f'El Area de la cirucunsferencia es {area}')
+def calcular_perimetro_circulo(radio):
+    perimetro = 2 * 3.14 * radio
+    print(f'El Perimetro de la cirucunsferencia es {perimetro}')
+
+#Programa Principal
+radio = int(input('Por favor ingrese el radio de la circunsferencia: '))
+calcular_area_circulo(radio)
+calcular_perimetro_circulo(radio)
 
 
 
