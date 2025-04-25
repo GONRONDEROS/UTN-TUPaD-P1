@@ -59,19 +59,29 @@ print(autos)
 # 8) Crear una lista vacía llamada "dobles" y agregar el doble de 5, 10 y 15 usando append
 # directamente. Imprimir la lista resultante por pantalla.
 
-
-
+dobles= []
+dobles.append(5*2)
+dobles.append(10*2)
+dobles.append(15*2)
+print(dobles)
 
 # 9) Dada la lista “compras”, cuyos elementos representan los productos comprados por
 # diferentes clientes:
-# compras = [["pan", "leche"], ["arroz", "fideos", "salsa"],
-# ["agua"]]
+# compras = [["pan", "leche"], ["arroz", "fideos", "salsa"], ["agua"]]
 # a) Agregar "jugo" a la lista del tercer cliente usando append.
 # b) Reemplazar "fideos" por "tallarines" en la lista del segundo cliente.
 # c) Eliminar "pan" de la lista del primer cliente.
 # d) Imprimir la lista resultante por pantalla
 
-
+compras = [["pan", "leche"], ["arroz", "fideos", "salsa"], ["agua"]]
+# a)
+compras[2].append('jugo')
+# b)
+compras[1][1] = 'tallarines'
+# c) 
+compras[0].remove('pan')
+# d) 
+print(compras)
 
 
 # 10) Elaborar una lista anidada llamada “lista_anidada” que contenga los siguientes elementos:
