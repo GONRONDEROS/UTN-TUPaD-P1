@@ -15,6 +15,13 @@ print(penultimo_elemento)
 # pantalla. Pista: para crear una lista vacía debes colocar los corchetes sin nada en su interior. Por
 # ejemplo:
 # lista_vacia = []
+
+lista_vacia = []
+lista_vacia.append('Estudioooo')
+lista_vacia.append('Gooool!!!')
+lista_vacia.append('Libertadores')
+print(lista_vacia)
+
 # 4) Reemplazar el segundo y último valor de la lista “animales” con las palabras “loro” y “oso”,
 # respectivamente. Imprimir la lista resultante por pantalla. ¡Puedes hacerlo como se muestra
 # en los videos o bien investigar cómo funciona el indexing con números negativos!
