@@ -32,3 +32,15 @@ animales[1]='loro'
 animales[3]='oso'
 print(animales)
 
+# 5) Analizar el siguiente programa y explicar con tus palabras qué es lo que realiza
+numeros = [8, 15, 3, 22, 7]
+numeros.remove(max(numeros))
+print(numeros)
+
+# El programa realiza los siguientes pasos:
+# Definición de la lista: Crea una lista llamada numeros con los valores [8, 15, 3, 22, 7].
+# Encontrar el valor máximo: La función max(numeros) encuentra el valor máximo de la lista, que en este caso es 22.
+# Eliminar el valor máximo: La función numeros.remove(max(numeros)) elimina el primer elemento de la lista que coincide con el valor máximo, que en este caso es 22.
+
+# 6) Crear una lista con números del 10 al 30 (incluído), haciendo saltos de 5 en 5 y mostrar por pantalla los dos primeros.
+
