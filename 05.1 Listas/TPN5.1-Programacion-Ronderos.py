@@ -44,3 +44,38 @@ print(numeros)
 
 # 6) Crear una lista con números del 10 al 30 (incluído), haciendo saltos de 5 en 5 y mostrar por pantalla los dos primeros.
 
+nueva_lista = list(range(10,31,5))
+print(nueva_lista[:2])
+
+# 7) Reemplazar los dos valores centrales (índices 1 y 2) de la lista “autos” por dos nuevos valores
+# cualesquiera.
+# autos = ["sedan", "polo", "suran", "gol"]
+
+autos = ["sedan", "polo", "suran", "gol"]
+
+
+# 8) Crear una lista vacía llamada "dobles" y agregar el doble de 5, 10 y 15 usando append
+# directamente. Imprimir la lista resultante por pantalla.
+
+
+
+# 9) Dada la lista “compras”, cuyos elementos representan los productos comprados por
+# diferentes clientes:
+# compras = [["pan", "leche"], ["arroz", "fideos", "salsa"],
+# ["agua"]]
+# a) Agregar "jugo" a la lista del tercer cliente usando append.
+# b) Reemplazar "fideos" por "tallarines" en la lista del segundo cliente.
+# c) Eliminar "pan" de la lista del primer cliente.
+# d) Imprimir la lista resultante por pantalla
+
+
+
+
+# 10) Elaborar una lista anidada llamada “lista_anidada” que contenga los siguientes elementos:
+# ● Posición lista_anidada[0]: 15
+# ● Posición lista_anidada[1]: True
+# ● Posición lista_anidada[2][0]: 25.5
+# ● Posición lista_anidada[2][1]: 57.9
+# ● Posición lista_anidada[2][2]: 30.6
+# ● Posición lista_anidada[3]: False
+# Imprimir la lista resultante por pantalla.
