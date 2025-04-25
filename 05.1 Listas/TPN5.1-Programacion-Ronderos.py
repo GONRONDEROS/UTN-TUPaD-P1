@@ -52,10 +52,13 @@ print(nueva_lista[:2])
 # autos = ["sedan", "polo", "suran", "gol"]
 
 autos = ["sedan", "polo", "suran", "gol"]
-
+autos[1] = 'corsa'
+autos[2] = 'ferrari'
+print(autos)
 
 # 8) Crear una lista vacía llamada "dobles" y agregar el doble de 5, 10 y 15 usando append
 # directamente. Imprimir la lista resultante por pantalla.
+
 
 
 
