@@ -55,8 +55,31 @@ print(f'Resultado de Decimal A Binario con decimal = 10: {decimal_a_binario(10)}
 #La solución debe ser recursiva.
 #No se debe usar [::-1] ni la función reversed().
 
+def tildes(palabra_a_revisar):
+    array_de_palabra = list(palabra_a_revisar)
+    tildes = ['á','é','í','ó','ú','Á','É','Í','Ó','Ú']
+    for i in range(len(tildes)):
+        for j in range(len(array_de_palabra)):
+            if array_de_palabra[j] == tildes[i]:
+                print('Caracter Invalido')
+    for letra in array_de_palabra:
+        if letra == ' ':
+            print('No se admiten espacios')             
+    return False
+    
+def es_palindromo(palabra):
+    if tildes(palabra) == False:
+        array_de_palabra = list(palabra)
+        if array_de_palabra[0] != array_de_palabra[-1]:
+            return False
+    print('estoy aqui 4')
+    return True
 
 
+print(es_palindromo('oso'))
+print(es_palindromo('osé'))
+print(es_palindromo('auto'))
+print(es_palindromo('reconocer'))
 
 #6) Escribí una función recursiva en Python llamada suma_digitos(n) que reciba un
 #número entero positivo y devuelva la suma de todos sus dígitos.
