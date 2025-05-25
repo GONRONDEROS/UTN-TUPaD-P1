@@ -29,14 +29,23 @@ print(f'Resultado de Prueba de Fibonacci de 3: {fibo(3)}')
 #algoritmo general.
 
 def potencia(base,pot):
-    if (base == 0 and pot == 0) or (base == 0 and pot < 0):
+    if base == 0 and (pot == 0 and pot < 0):
         return 'Indefinido'
-    return base * potencia(base,(pot-1))
+    if pot == 0: # Caso Base
+        return 1
+    return base * potencia(base,pot-1)
 
-print(f'Resultado de Prueba de Potencia de base 0 potencia 0: {potencia(0,0)}')
+print(f'Resultado de Prueba de Potencia de base 2 potencia 3: {potencia(2,3)}')
 
 #4) Crear una función recursiva en Python que reciba un número entero positivo en base
 #decimal y devuelva su representación en binario como una cadena de texto.
 
 def decimal_a_binario(base_decimal):
+    if base_decimal == 0: # Caso Base
+        return ''
+    resto = base_decimal % 2
+    return decimal_a_binario(base_decimal // 2) + str(resto)
     
+print(f'Resultado de Decimal A Binario con decimal = 10: {decimal_a_binario(10)}')
+
+
