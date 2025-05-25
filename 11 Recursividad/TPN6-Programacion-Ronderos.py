@@ -9,6 +9,8 @@ def factorial(num):
         return 1
     return num * factorial(num -1)
 
+print(f'Resultado de Prueba de Factorial de 4: {factorial(4)}')
+
 #2) Crea una función recursiva que calcule el valor de la serie de Fibonacci en la posición
 #indicada. Posteriormente, muestra la serie completa hasta la posición que el usuario
 #especifique.
@@ -20,11 +22,21 @@ def fibo(pos):
         return 1
     return fibo(pos-1)+fibo(pos-2)
 
+print(f'Resultado de Prueba de Fibonacci de 3: {fibo(3)}')
+
 #3) Crea una función recursiva que calcule la potencia de un número base elevado a un
 #exponente, utilizando la fórmula 𝑛**𝑚 = (𝑛) ∗ (𝑛)**(m-1). Prueba esta función en un
 #algoritmo general.
 
+def potencia(base,pot):
+    if (base == 0 and pot == 0) or (base == 0 and pot < 0):
+        return 'Indefinido'
+    return base * potencia(base,(pot-1))
 
+print(f'Resultado de Prueba de Potencia de base 0 potencia 0: {potencia(0,0)}')
 
 #4) Crear una función recursiva en Python que reciba un número entero positivo en base
 #decimal y devuelva su representación en binario como una cadena de texto.
+
+def decimal_a_binario(base_decimal):
+    
