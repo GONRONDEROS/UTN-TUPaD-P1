@@ -13,8 +13,12 @@ def factorial(num):
 #indicada. Posteriormente, muestra la serie completa hasta la posición que el usuario
 #especifique.
 
-
-
+def fibo(pos):
+    if pos <= 0:
+        return 0
+    elif pos == 1:
+        return 1
+    return fibo(pos-1)+fibo(pos-2)
 
 #3) Crea una función recursiva que calcule la potencia de un número base elevado a un
 #exponente, utilizando la fórmula 𝑛**𝑚 = (𝑛) ∗ (𝑛)**(m-1). Prueba esta función en un
