@@ -70,11 +70,11 @@ def tildes(palabra_a_revisar):
 def es_palindromo(palabra):
     if tildes(palabra) == False:
         array_de_palabra = list(palabra)
+        if len(array_de_palabra) <= 1: # Si el array tiene un elemento o menos, es palindromo por def
+            return True
         if array_de_palabra[0] != array_de_palabra[-1]:
             return False
-    print('estoy aqui 4')
-    return True
-
+        return es_palindromo(array_de_palabra[1:-1]) # ya habiendo chequeado el primer elemento, comenzamos desde el segundo (indice = 1) y eliminamos al mismo tiempo el ultimo (:-1)
 
 print(es_palindromo('oso'))
 print(es_palindromo('osé'))
