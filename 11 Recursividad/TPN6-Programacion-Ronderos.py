@@ -91,7 +91,14 @@ print(es_palindromo('reconocer'))
 #suma_digitos(9) → 9
 #suma_digitos(305) → 8 (3 + 0 + 5)
 
+def suma_digitos(n):
+    if n == 0:
+        return 0
+    resto = n % 10
+    cociente = n // 10
+    return resto + suma_digitos(cociente)
 
+print(suma_digitos(9))
 
 #7) Un niño está construyendo una pirámide con bloques. En el nivel más bajo coloca n
 #bloques, en el siguiente nivel uno menos (n - 1), y así sucesivamente hasta llegar al
