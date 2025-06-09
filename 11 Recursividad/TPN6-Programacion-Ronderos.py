@@ -112,6 +112,13 @@ print(suma_digitos(9))
 #contar_bloques(4) → 10 (4 + 3 + 2 + 1)
 
 
+def myst(n):
+    if n <= 1:
+        return n
+    return myst(n-1)+myst(n-2)
+
+print(myst(4))
+
 #8) Escribí una función recursiva llamada contar_digito(numero, digito) que reciba un
 #número entero positivo (numero) y un dígito (entre 0 y 9), y devuelva cuántas veces
 #aparece ese dígito dentro del número.
@@ -119,3 +126,13 @@ print(suma_digitos(9))
 #contar_digito(12233421, 2) → 3
 #contar_digito(5555, 5) → 4 
 #contar_digito(123456, 7) → 0 
+
+def contar_digito(numero,digito):
+    if numero == 0:
+        return 0
+    return (1 if numero%10 ==digito else 0) + contar_digito(numero // 10,digito)
+
+numero_ej8 = int(input("Por favor ingrese un numero entero positivo: "))
+digito_ej8 = int(input("Por favor ingrese un digito entre 0 y 9: "))
+
+print(f"El digito {digito_ej8} aparece {contar_digito(numero_ej8,digito_ej8)} veces en el numero {numero_ej8}")
