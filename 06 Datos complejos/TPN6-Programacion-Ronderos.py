@@ -65,3 +65,84 @@ for palabra in palabras:
 
 print("Recuento:", recuento)
 
+#6
+
+alumnos = {}
+
+for _ in range(3):
+    nombre = input("Nombre del alumno: ")
+    notas = []
+    for i in range(3):
+        nota = float(input(f"Ingresá la nota {i+1} de {nombre}: "))
+        notas.append(nota)
+    alumnos[nombre] = tuple(notas)
+
+for alumno, notas in alumnos.items():
+    promedio = sum(notas) / len(notas)
+    print(f"{alumno} tiene un promedio de {promedio:.2f}")
+
+#7
+
+parcial1 = {1, 2, 3, 4, 5}
+parcial2 = {4, 5, 6, 7, 8}
+
+ambos = parcial1 & parcial2
+solo_uno = parcial1 ^ parcial2
+al_menos_uno = parcial1 | parcial2
+
+print("Aprobaron ambos:", ambos)
+print("Aprobaron solo uno:", solo_uno)
+print("Aprobaron al menos uno:", al_menos_uno)
+
+#8
+
+productos = {
+    "manzanas": 10,
+    "bananas": 5,
+    "naranjas": 8
+}
+
+producto = input("Ingresá el nombre del producto: ")
+
+if producto in productos:
+    agregar = int(input("¿Cuántas unidades querés agregar?: "))
+    productos[producto] += agregar
+    print(f"Nuevo stock de {producto}: {productos[producto]}")
+else:
+    nuevo_stock = int(input("Producto nuevo. Ingresá el stock inicial: "))
+    productos[producto] = nuevo_stock
+    print(f"Producto {producto} agregado con {nuevo_stock} unidades.")
+
+#9 
+agenda = {
+    ("lunes", "10:00"): "Reunión",
+    ("martes", "15:00"): "Clase de inglés",
+    ("viernes", "18:00"): "Gimnasio"
+}
+
+dia = input("Ingresá el día: ").lower()
+hora = input("Ingresá la hora (ej: 10:00): ")
+
+clave = (dia, hora)
+
+if clave in agenda:
+    print(f"Actividad: {agenda[clave]}")
+else:
+    print("No hay actividades programadas.")
+
+
+#10
+
+paises = {
+    "Argentina": "Buenos Aires",
+    "Chile": "Santiago",
+    "Brasil": "Brasilia"
+}
+
+invertido = {}
+
+for pais, capital in paises.items():
+    invertido[capital] = pais
+
+print("Diccionario original:", paises)
+print("Diccionario invertido:", invertido)
