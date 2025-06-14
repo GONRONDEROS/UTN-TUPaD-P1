@@ -97,9 +97,9 @@ print("Aprobaron al menos uno:", al_menos_uno)
 #8
 
 productos = {
-    "manzanas": 10,
-    "bananas": 5,
-    "naranjas": 8
+    "manzanas": 20,
+    "bananas": 30,
+    "naranjas": 13
 }
 
 producto = input("Ingresá el nombre del producto: ")
@@ -116,8 +116,7 @@ else:
 #9 
 agenda = {
     ("lunes", "10:00"): "Reunión",
-    ("martes", "15:00"): "Clase de inglés",
-    ("viernes", "18:00"): "Gimnasio"
+    ("martes", "15:00"): "Clase de inglés"
 }
 
 dia = input("Ingresá el día: ").lower()
@@ -135,8 +134,7 @@ else:
 
 paises = {
     "Argentina": "Buenos Aires",
-    "Chile": "Santiago",
-    "Brasil": "Brasilia"
+    "Chile": "Santiago"
 }
 
 invertido = {}
